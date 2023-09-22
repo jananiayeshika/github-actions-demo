@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 
-    private  Calculator calculator = new Calculator();
+    private final Calculator calculator = new Calculator();
 
     @Test
     public void testAdd() {
@@ -11,7 +11,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testSubstract() {
+    public void testSubtract() {
         Assertions.assertEquals(7, calculator.subtract(14,7));
     }
 
@@ -21,7 +21,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testdivide() {
+    public void testDivide() {
         Assertions.assertEquals(2, calculator.divide(14,7));
     }
 }
